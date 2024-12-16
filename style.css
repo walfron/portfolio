@@ -1,0 +1,116 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #bd5d38;
+  background-color: #EAE4DD;
+}
+
+.navbar {
+  background-color: #EAE4DD !important;
+}
+
+.navbar-brand, .nav-link {
+  color: #343a40 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+  color: #bd5d38 !important;
+}
+
+header {
+  background-color: #bd5d38;
+  color: #bd5d38;
+}
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+  color: #EAE4DD;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.mb-3{
+  color: #bd5d38;
+}
+
+.nav-link.a-propos {
+  color: #bd5d38 !important; /* Couleur différente pour ce lien spécifique */
+  background-color: transparent; /* Si un fond est nécessaire, il peut être ajouté */
+}
+
+.nav-link.a-propos:hover {
+  color: #E1D7C6 !important; /* Effet au survol */
+}
+
+p {
+  color: black;
+}
+
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-color: #E1D7C6;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #343a40;
+  border-color: #495057;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #bd5d38;
+  border-color: #bd5d38;
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 2rem;
+  background-color: #bd5d38;
+  color: #EAE4DD;
+}
+
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: #bd5d38 !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.slide-in-left {
+  animation: slideInFromLeft 0.5s ease-out;
+}
+
+.slide-in-right {
+  animation: slideInFromRight 0.5s ease-out;
+}
+
+/* Staggered animation for portfolio items */
+#portfolio .card:nth-child(1) { animation-delay: 0.1s; }
+#portfolio .card:nth-child(2) { animation-delay: 0.2s; }
+#portfolio .card:nth-child(3) { animation-delay: 0.3s; }

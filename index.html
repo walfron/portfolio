@@ -1,44 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio SIO SISR</title>
-  <link rel="stylesheet" href="global.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anne-Lou Delage-Davies - Portfolio BTS SIO SISR</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
+<body class="fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Anne-Lou Delage-Davies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a-propos">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Documents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#veille">Veille informatique</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<body>
-  <header>
-    <h1>Anne-Lou Delage-Davies</h1>
-    <h2>Portfolio BTS SIO SISR</h2>
-  </header>
+    <header class="bg-primary text-white text-center py-5 slide-in-left">
 
-  <main>
-    <section id="a-propos">
-      <h2>À propos</h2>
-      <p>Une brève présentation de toi et de ton parcours.</p>
-    </section>
+        <h2>Bienvenue sur mon portfolio de BTS SIO SISR</h2>
+    </header>
 
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <ul>
-        <li><a href="PDF/CV.pdf">CV</a></li>
-        <li><a href="PDF/Rapport de stage.pdf">Rapport de Stage</a></li>
-        <li><a href="PDF/Attestation stage Anne-Lou.pdf">Attestation</a></li>
-      </ul>
-    </section>
+    <main class="container my-5">
+        <section id="a-propos" class="mb-5 slide-in-right">
+            <h2 class="mb-3">À propos</h2>
+            <p>Une brève présentation de moi et de mon parcours dans le domaine du BTS SIO SISR.</p>
+        </section>
 
-    <section id="zero-trust">
-      <h2>Veille informatique</h2>
-      <li><a href="veille.html">Zero Trust</a></li>
-      </section>
-  </main>
+        <section id="portfolio" class="mb-5 slide-in-left">
+            <h2 class="mb-3">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3 fade-in">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">CV</h5>
+                            <a href="PDF/CV.pdf" class="btn btn-primary" target="_blank">Voir le CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 fade-in">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Rapport de Stage</h5>
+                            <a href="PDF/Rapport de stage.pdf" class="btn btn-primary" target="_blank">Voir le rapport</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 fade-in">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Attestation de Stage</h5>
+                            <a href="PDF/Attestation stage Anne-Lou.pdf" class="btn btn-primary" target="_blank">Voir l'attestation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    <p>© 2025 - Anne-Lou Delage-Davies. Tous droits réservés.</p>
-</footer>
+        <section id="veille" class="mb-5 slide-in-right">
+            <h2 class="mb-3">Veille informatique</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Zero Trust</h5>
+                    <a href="veille.html" class="btn btn-primary">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-3 slide-in-left">
+        <p>&copy; 2025 - Anne-Lou Delage-Davies. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
+
