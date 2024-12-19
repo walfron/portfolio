@@ -8,7 +8,7 @@ body {
 }
 
 .navbar {
-  background-color: #EAE4DD !important;
+  background-color: #bd5d38 !important;
 }
 
 .navbar-brand, .nav-link {
@@ -17,7 +17,7 @@ body {
 }
 
 .navbar-brand:hover, .nav-link:hover {
-  color: #bd5d38 !important;
+  color: #EAE4DD !important;
 }
 
 header {
@@ -39,7 +39,7 @@ h1, h2 {
 }
 
 p {
-  color: black;
+  color: #343a40;
 }
 
 .card {
@@ -56,6 +56,11 @@ p {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.bg-primary {
+  background-color: #bd5d38 !important;
+  
+}
+
 .btn-primary:hover {
   background-color: #bd5d38;
   border-color: #bd5d38;
@@ -63,7 +68,7 @@ p {
 }
 
 footer {
-  background-color: #222;
+  background-color: #343a40;
   color: white;
   padding: 20px 0;
   text-align: center;
