@@ -3,15 +3,12 @@ body {
   line-height: 1.6;
   color: #bd5d38;
   background-color: #EAE4DD;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
   background-color: #EAE4DD !important;
-}
-
-.navbar-custom {
-  background-color: rgba(234, 228, 221, 0.9) !important;
-  backdrop-filter: blur(10px);
 }
 
 .navbar-brand, .nav-link {
@@ -19,60 +16,26 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-link {
-  position: relative;
-  overflow: hidden;
-}
-
 .navbar-brand:hover, .nav-link:hover {
   color: #bd5d38 !important;
 }
 
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #bd5d38;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.nav-link:hover::after {
-  transform: scaleX(1);
-}
-
 header {
-  background-color: #bd5d38;
-  color: #bd5d38;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #bd5d38 !important;
+  color: #EAE4DD;
+  text-align: center;
 }
 
 h1, h2 {
   margin-bottom: 0.5rem;
-  color: #EAE4DD;
   font-family: "Saira Condensed", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 50px;
 }
 
-.mb-3{
+.mb-3 {
   color: #bd5d38;
-}
-
-.nav-link.a-propos {
-  color: #bd5d38 !important; /* Couleur différente pour ce lien spécifique */
-  background-color: transparent; /* Si un fond est nécessaire, il peut être ajouté */
-}
-
-.nav-link.a-propos:hover {
-  color: #E1D7C6 !important; /* Effet au survol */
 }
 
 p {
@@ -80,25 +43,11 @@ p {
 }
 
 .card {
-  transition: all 0.3s ease;
   border-color: #E1D7C6;
 }
 
-.card-custom {
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.card-custom:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary {
@@ -107,35 +56,51 @@ p {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-custom {
-  border-radius: 25px;
-  padding: 10px 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-
 .btn-primary:hover {
   background-color: #bd5d38;
   border-color: #bd5d38;
   transform: scale(1.05);
 }
 
-.btn-custom:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 footer {
-  margin-top: 2rem;
-  background-color: #343a40;
-  color: #EAE4DD;
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.bg-primary {
-  --bs-bg-opacity: 1;
-  background-color: #bd5d38 !important;
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #bd5d38;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #bd5d38;
 }
 
 /* Animations */
@@ -165,65 +130,3 @@ footer {
 .slide-in-right {
   animation: slideInFromRight 0.5s ease-out;
 }
-
-/* Staggered animation for portfolio items */
-#portfolio .card:nth-child(1) { animation-delay: 0.1s; }
-#portfolio .card:nth-child(2) { animation-delay: 0.2s; }
-#portfolio .card:nth-child(3) { animation-delay: 0.3s; }
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Zoom effect for images */
-.zoom-effect {
-  overflow: hidden;
-}
-
-.zoom-effect img {
-  transition: transform 0.3s ease;
-}
-
-.zoom-effect:hover img {
-  transform: scale(1.1);
-}
-
-/* Styles pour le carousel */
-.carousel-custom {
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Styles pour les badges */
-.badge-custom {
-  font-size: 0.9em;
-  padding: 8px 12px;
-  border-radius: 20px;
-}
-
-/* Styles pour les tooltips */
-.tooltip-custom .tooltip-inner {
-  background-color: #bd5d38;
-  color: #fff;
-  border-radius: 10px;
-  padding: 10px 15px;
-  font-size: 0.9em;
-}
-
-/* Styles pour les modals */
-.modal-custom .modal-content {
-  border-radius: 15px;
-  border: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.modal-custom .modal-header {
-  border-bottom: none;
-}
-
-.modal-custom .modal-footer {
-  border-top: none;
-}
-
