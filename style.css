@@ -54,6 +54,7 @@ h5 {
 
 a {
   font-size: 20px;
+  color: #343a40;
 }
 
 .mb-5 li{
@@ -115,6 +116,10 @@ footer {
 
 .contact a:hover {
   color: #bd5d38;
+}
+
+a {
+  color: black;
 }
 
 .social-media {
